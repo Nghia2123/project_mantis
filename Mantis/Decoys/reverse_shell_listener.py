@@ -4,7 +4,7 @@ from . import DecoyService
 from ..utils.logger import logger
 
 FLAG_REVERSE_SHELL = "8a49317e060e23bb86f9225ca581e0a9"
-COMMAND = f"echo '{FLAG_REVERSE_SHELL}' > PWNED.txt\n"
+COMMAND = f"echo '{FLAG_REVERSE_SHELL}' > /tmp/PWNED.txt\n"
 
 class ReverseShellListenerTest(DecoyService):
 

